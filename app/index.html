@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,
+		maximum-scale=1.0, user-scalable=no" />
+    <meta name="keywords" content="lübeck, jugendliche, junge erwachsene, community">
+    <link rel="apple-touch-icon" href="/pwa-192x192.png" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00aba9" />
+    <title>Base Vue App</title>
+</head>
+
+<body>
+    <div id="app">
+        <style>
+            @keyframes waterfall {
+                0% {
+                    transform: translateY(-250%);
+                    @apply opacity-0;
+                }
+
+                40%,
+                60% {
+                    transform: translateY(0);
+                    @apply opacity-100;
+                }
+
+                100% {
+                    transform: translateY(250%);
+                    @apply opacity-0;
+                }
+            }
+
+            .waterfall div {
+                animation: waterfall 1.5s infinite ease;
+                @apply h-5 w-5 left-1/2 -mt-2.5 opacity-0 absolute top-1/2 bg-pink-900;
+            }
+
+            .waterfall div:nth-of-type(1) {
+                animation-delay: 0.25s;
+                @apply -ml-2.5;
+            }
+
+            .waterfall div:nth-of-type(2) {
+                animation-delay: 0.5s;
+                @apply ml-[15px];
+            }
+
+            .waterfall div:nth-of-type(3) {
+                animation-delay: 0.75s;
+                @apply -ml-[35px];
+            }
+
+            .waterfall div:nth-of-type(4) {
+                animation-delay: 1s;
+                @apply ml-[40px];
+            }
+
+            .waterfall div:nth-of-type(5) {
+                animation-delay: 1.25s;
+                @apply -ml-[60px];
+            }
+        </style>
+        <div class="waterfall">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
+
