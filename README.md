@@ -111,6 +111,6 @@ The Tailwind CSS IntelliSense plugin provides autocomplete, syntax highlighting,
 
 - [Vite Docs](https://vitejs.dev/)
 - [Vue 3 Docs](https://vuejs.org/)
-- [Tailwind Docs](hhttps://tailwindcss.com/)
+- [Tailwind Docs](https://tailwindcss.com/)
 
 Happy coding! ✨
